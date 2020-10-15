@@ -2,10 +2,6 @@ import os
 import numpy as np
 import wave
 
-
-open_gridspec = 0
-audio_test = 0
-
 class data:
     fr = 44100
     max = 500
@@ -13,13 +9,11 @@ class data:
     
     def __init__(self, tune):
       self.path = os.path.join(self.dir, tune)
-
-
+    
       spf = wave.open(self.path, 'r')
       self.nr = spf.getnframes()
       print(self.nr)
       signal = spf.readframes(-1)
-
       self.signal = np.fromstring(signal, 'Int32')
 
     def fft(self):
