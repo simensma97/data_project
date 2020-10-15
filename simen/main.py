@@ -17,6 +17,7 @@ def tune(path):
     
       name_chords = np.append(name_chords, name)
       freq_chords = np.append(freq_chords, freq)
+      
   return name_chords, freq_chords
 
 
