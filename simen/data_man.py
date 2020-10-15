@@ -9,9 +9,9 @@ audio_test = 0
 class data:
     fr = 44100
     max = 500
+    dir = './chords'
     
     def __init__(self, tune):
-      self.dir = './chords'
       self.path = os.path.join(self.dir, tune)
 
 
