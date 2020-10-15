@@ -10,9 +10,9 @@ class data:
     def __init__(self, tune):
       self.dir = './chords'
       self.path = os.path.join(self.dir, tune)
+        
       self.list_freq = []
       self.freq_pres = []
-      self.chords_pres = []
 
       self.start = 0
 
